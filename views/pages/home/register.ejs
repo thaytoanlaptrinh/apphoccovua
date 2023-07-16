@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/img/logo.png">
+    <title>Học Cờ Vua Cùng Thầy Toàn</title>
+    <link rel="stylesheet" href="/css/base.client.css">
+    <link rel="stylesheet" href="/css/core.client.css">
+    <link rel="stylesheet" href="/bundles/app/css/checkmate.client.13c05815.css">
+    <link rel="stylesheet" href="/bundles/app/css/chess-ads.client.aba6ce89.css">
+    <link rel="stylesheet" href="/bundles/app/css/security.client.a218f77b.css">
+</head>
+
+
+<body class="newicons no-nav dark-mode security-v5-chessboard-background">
+    <div class="">
+
+        <div class="base-container">
+            <div id="scroll-top-anchor"></div>
+            <div id="language-banner"></div>
+            <main class="v5-section security-component security-v5-component">
+                <div class="security-registration-sheet security-v5-registration-sheet">
+                    <h1 class="security-v5-title">
+                        Tham gia ngay
+                    </h1>
+                    <h3 class="security-v5-subtitle">
+                        và Bắt Đầu Chơi Cờ Vua!
+                    </h3>
+
+                    <div class="security-container">
+
+                        <div class="register-sheet-component">
+                            <form action="/register" method="post"
+                                class="register-form-component-v5">
+                                <!---->
+                                <div class="register-form-line">
+                                    <div class="register-form-form-group">
+                                        <div class="ui_v5-input-group-component register-form-form-element"
+                                            spellcheck="false"><input
+                                                class="ui_v5-input-component ui_v5-input-large ui_v5-input-group-space-left"
+                                                id="registration_username" aria-label="Tên tài khoản" autocomplete="off"
+                                                maxlength="524288" name="registration[username]"
+                                                placeholder="Tên tài khoản" type="text"> <span
+                                                class="icon-font-chess ui_v5-input-group-icon ui_v5-input-group-left user"></span>
+                                            <!---->
+                                            <!---->
+                                            <!---->
+                                        </div> <span class="icon-font-chess register-form-input-icon"></span>
+                                    </div>
+                                </div>
+                                <%if (!checkRegister) {%>
+                                    <div class="form-error-component register-form-input-error">That username is taken. If this is you, <a href="#">log in</a>!</div>
+                                <%}%>
+                                
+                                <!---->
+                                <div class="register-form-line">
+                                    <div class="register-form-form-group">
+                                        <div class="ui_v5-input-group-component register-form-form-element"><input
+                                                class="ui_v5-input-component ui_v5-input-large ui_v5-input-group-space-left"
+                                                id="registration_email" aria-label="" autocomplete="off"
+                                                maxlength="524288" name="registration[email]" placeholder="Thư điện tử"
+                                                type="email"> <span
+                                                class="icon-font-chess ui_v5-input-group-icon ui_v5-input-group-left mail-alt"></span>
+                                            <!---->
+                                            <!---->
+                                            <!---->
+                                        </div> <span class="icon-font-chess checkmark register-form-input-icon"></span>
+                                        <!---->
+                                    </div>
+                                </div>
+                                <!---->
+                                <div class="register-form-line">
+                                    <div class="register-form-form-group">
+                                        <div class="ui_v5-input-group-component register-form-form-element"><input
+                                                class="ui_v5-input-component ui_v5-input-large ui_v5-input-group-space-left ui_v5-input-group-space-right"
+                                                id="registration_password" aria-label="" autocomplete="off"
+                                                maxlength="524288" name="registration[password]" placeholder="Mật khẩu"
+                                                type="password"> <span
+                                                class="icon-font-chess ui_v5-input-group-icon ui_v5-input-group-left lock"></span>
+                                            <span
+                                                class="icon-font-chess ui_v5-input-group-icon ui_v5-input-group-right eye"></span>
+                                            <!---->
+                                            <!---->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!---->
+                                <!---->
+                                <!---->
+                                <div class="register-form-line">
+                                    <div class="authentication-skill-level-selection-component" style="">
+                                        <p class="authentication-skill-level-selection-title">Trình độ chơi cờ của bạn
+                                            ra sao?</p>
+                                        <div class="authentication-skill-level-selection-levels">
+                                            <div class="authentication-skill-level-selection-level"><label
+                                                    for="new"><input id="new" type="radio"
+                                                        name="registration[skillLevel]"
+                                                        class="authentication-skill-level-selection-input" value="1">
+                                                    <span
+                                                        class="authentication-skill-level-selection-label-icon authentication-skill-level-selection-selected"><span
+                                                            class="authentication-skill-level-selection-icon"><span
+                                                                class="authentication-skill-level-selection-piece"><svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    viewBox="0 0 25 33">
+                                                                    <path class="cls-1"
+                                                                        d="M.701 32.176h23.465c0-2.934-1.173-5.397-3.168-6.688-5.514-3.402-5.514-7.04-5.631-8.33V15.75h3.285c.352-.704.586-1.525.586-2.346l-3.871-2.347.234-.234a5.731 5.731 0 0 0 2.464-4.693c0-3.168-2.58-5.632-5.631-5.632-3.168 0-5.632 2.581-5.632 5.632 0 1.877.939 3.637 2.464 4.693l.235.234-3.872 2.347c0 .821.234 1.642.586 2.346h3.286v1.408c-.118 1.173-.235 4.928-5.632 8.33C1.874 26.778.7 29.243.7 32.176z"
+                                                                        fill="#666564"></path>
+                                                                </svg></span></span></span>
+                                                    <div class="authentication-skill-level-selection-name">Người mới
+                                                        chơi</div>
+                                                </label></div>
+                                            <div class="authentication-skill-level-selection-level"><label
+                                                    for="beginner"><input id="beginner" type="radio"
+                                                        name="registration[skillLevel]"
+                                                        class="authentication-skill-level-selection-input" value="2">
+                                                    <span class="authentication-skill-level-selection-label-icon"><span
+                                                            class="authentication-skill-level-selection-icon"><span
+                                                                class="authentication-skill-level-selection-piece"><svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    viewBox="0 0 31 38">
+                                                                    <path class="cls-1"
+                                                                        d="M5.718 20.633C6.891 19.46 7.008 17.7 9.473 17.7c1.994 0 3.637-1.76 4.575-2.816l.939-1.056c.352.47 1.408 1.878.938 3.52-.117.47-.352.939-.586 1.29-.47.705-1.29 1.409-2.112 2.112-1.877 1.526-5.045 3.168-5.397 6.805h17.716c.352-1.525 2.112-5.748 2.112-8.564 0-10.442-7.04-15.018-13.375-15.487L10.998.219c-.47 0-.939.469-1.056 1.056l-.352 1.76c-.352.938-.939 1.525-1.995 2.346-.938.821-1.173 1.525-1.407 2.112-.704 1.877-.822 2.933-2.112 4.81L1.143 16.41c-.704.938-.704 2.229.117 2.933 1.173.82 4.224 1.525 4.458 1.29zM23.2 29.198H9.12c-7.039 0-7.039 5.632-7.039 5.632v2.346H30.24V34.83s0-5.632-7.04-5.632z"
+                                                                        fill="#666564"></path>
+                                                                </svg></span></span></span>
+                                                    <div class="authentication-skill-level-selection-name">Người mới tập
+                                                        chơi</div>
+                                                </label></div>
+                                            <div class="authentication-skill-level-selection-level"><label
+                                                    for="intermediate"><input id="intermediate" type="radio"
+                                                        name="registration[skillLevel]"
+                                                        class="authentication-skill-level-selection-input" value="3">
+                                                    <span class="authentication-skill-level-selection-label-icon"><span
+                                                            class="authentication-skill-level-selection-icon"><span
+                                                                class="authentication-skill-level-selection-piece"><svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    viewBox="0 0 29 35">
+                                                                    <path class="cls-1"
+                                                                        d="M7.16 13.058c-.705 3.989-1.878 10.207-2.112 11.498H23.82c-.118-1.29-1.408-7.51-2.112-11.498H7.159zM7.512 11.298h13.844c2.112-.704 2.816-2.112 3.05-3.754l.47-5.75c-1.056-.586-2.23-.938-3.52-.938l-.939 3.99h-3.05L16.78.386S15.49.152 14.434.152s-2.347.235-2.347.235l-.586 4.458H8.567L7.63.974c-1.29 0-2.464.352-3.52.938l.47 5.75c.117 1.524.82 2.932 2.933 3.636zM21.473 26.198H7.394c-7.04 0-7.04 5.632-7.04 5.632v2.346h28.159V31.83s0-5.631-7.04-5.631z"
+                                                                        fill="#666564"></path>
+                                                                </svg></span></span></span>
+                                                    <div class="authentication-skill-level-selection-name">Trung cấp
+                                                    </div>
+                                                </label></div>
+                                            <div class="authentication-skill-level-selection-level"><label
+                                                    for="advanced"><input id="advanced" type="radio"
+                                                        name="registration[skillLevel]"
+                                                        class="authentication-skill-level-selection-input" value="4">
+                                                    <span class="authentication-skill-level-selection-label-icon"><span
+                                                            class="authentication-skill-level-selection-icon"><span
+                                                                class="authentication-skill-level-selection-piece"><svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    viewBox="0 0 35 38">
+                                                                    <path class="cls-1"
+                                                                        d="M34.024 6.202c-.587-.586-1.29-.938-2.112-.938-.821 0-1.525.352-1.994.938-.587.587-.822 1.291-.822 2.112 0 .704.235 1.29.704 1.877l-5.162 6.923-.821-10.794c.704-.235 1.29-.587 1.642-1.056.352-.47.587-1.056.587-1.877 0-.939-.352-1.643-.939-2.347-.586-.586-1.29-.938-2.111-.938a3.206 3.206 0 0 0-3.168 3.167c0 1.056.352 1.878 1.173 2.581l-3.52 10.677-3.637-10.56c.822-.703 1.174-1.524 1.174-2.58 0-.939-.352-1.643-.94-2.23C13.493.571 12.789.22 11.85.22c-.822 0-1.525.352-2.112.938-.587.587-.939 1.408-.939 2.347 0 .821.235 1.408.587 1.877.352.47.939.821 1.643 1.056l-.704 10.794-5.28-6.922c.47-.587.704-1.173.704-1.877s-.235-1.408-.821-2.112c-.587-.587-1.29-.939-1.995-.939-.821 0-1.525.352-2.112.939C.235 6.906 0 7.61 0 8.432c0 .704.235 1.407.704 1.994.47.587 1.173.939 1.877 1.056l5.632 16.19H26.75l5.514-16.19c.822-.117 1.408-.47 1.877-1.056.47-.587.704-1.29.704-1.994.118-.939-.234-1.643-.82-2.23zM24.404 29.198h-14.08c-7.039 0-7.039 5.632-7.039 5.632v2.346h28.158V34.83s0-5.632-7.04-5.632z"
+                                                                        fill="#666564"></path>
+                                                                </svg></span></span></span>
+                                                    <div class="authentication-skill-level-selection-name">Nâng cao
+                                                    </div>
+                                                </label></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!----> <input type="hidden" name="registration[timezone]" value="Asia/Bangkok"> <input
+                                    id="registration__token" type="hidden" name="registration[_token]"
+                                    value="dK6IaiudEfEXo-i44byYzTc6rguL29H7a_H2tyWzgN0"> <input type="hidden"
+                                    name="kountSessionId" value="7dfa79073b1c47ffbdbe1b9cf919876c"> <input type="hidden"
+                                    name="fingerprint" value="eea81c09fe5a94f17413a0b69b805f77"> <input type="hidden"
+                                    name="registration[friend]">
+                                <!---->
+                                <div class="register-form-line"><button disabled="disabled" type="submit"
+                                        class="ui_v5-button-component ui_v5-button-primary ui_v5-button-large ui_v5-button-full register-form-form-submit register-form-button"
+                                        id="registration_submit">Đăng ký</button></div>
+                            </form>
+                            <!---->
+                            <div
+                                class="authentication-social-signin-v5-component authentication-social-signin-v5-dark register-sheet-social">
+                                <div class="authentication-social-signin-v5-separator"><span></span> <span
+                                        class="authentication-social-signin-v5-paragraph">HOẶC</span> <span></span>
+                                </div>
+                                <div class="authentication-social-signin-v5-options"> <a aria-label="Đăng ký bằng Google"
+                                        href="/login/google"
+                                        class="authentication-social-signin-v5-social-button authentication-social-signin-v5-google"><span
+                                            class="authentication-social-signin-v5-social-icon google"></span>
+                                        <span>Đăng ký bằng Google</span></a> <a aria-label="Đăng ký qua Facebook"
+                                        href="/register-facebook"
+                                        class="authentication-social-signin-v5-social-button authentication-social-signin-v5-facebook"><span
+                                            class="authentication-social-signin-v5-social-icon facebook-button"></span>
+                                        <span>Đăng ký qua Facebook</span></a></div>
+                            </div>
+                        </div>
+
+                        <p class="security-v5-login-text">
+                            <span>
+                                Already have an account?
+                            </span>
+
+                            <a href="/login"
+                                target="_self" rel="nofollow" class="security-v5-link">
+                                Đăng nhập
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+            </main>
+
+        </div>
+    </div>
+    <script src="/js/register.js"></script>
+</body>
+
+</html>

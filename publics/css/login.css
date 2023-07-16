@@ -1,0 +1,11 @@
+.login-chessboard-background .base-container:after {
+    background: url(/img/login/chessboard-background.png) repeat-x bottom;
+    background-size: contain;
+    bottom: 0;
+    content: "";
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    right: 0;
+    z-index: -1;
+}

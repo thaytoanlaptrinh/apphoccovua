@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/img/logo.png">
+    <title>Học Cờ Vua Cùng Thầy Toàn</title>
+    <link rel="stylesheet" href="/css/chessboard-1.0.0.min.css">
+    <link rel="stylesheet" href="/css/chess-color.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/before.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <style>
+        #board {
+          width: 600px;
+        }
+      </style>
+</head>
+
+<body>
+    <div class="base-layout">
+        <div class="base-sidebar">
+            <div class="nav-top">
+                <ul>
+                    <li class="sprite learn-top"><a href="">Trang chủ</a></li>
+                    <li class="sprite play-top "><a href="">Thi đấu</a></li>
+                    <li class="sprite puzzles-top "><a href="">Bài tập</a></li>
+                </ul>
+            </div>
+            <% if(!loggedIn) { %>
+            <div class="nav-bottom">
+                <ul>
+                    <li><a href="">Đăng ký</a></li>
+                    <li><a href="/login">Đăng nhập</a></li>
+                </ul>
+            </div>
+            <% } %>
+            <% if(loggedIn) { %>   
+                <div class="nav-bottom">
+                <!-- <a class="nav-link-component nav-link-main-design nav-link-top-level sprite puzzles-top"
+                    data-amplitude-nav-selection="puzzles" data-nav-link="puzzles" href="/puzzles"
+                    target="_self"> -->
+                    <span class="nav-link-text" ></span>
+                <!-- </a> -->
+            </div>
+            <li class="sprite play-top"><a href="" id="username"><%= userName %></a></li>
+                <% } %>
+
+        </div>
+        <div id="app">
+            <div id="myboardWrap">
+              <div id="board"></div>
+              <div id="action">
+                <textarea id="pgn-input" placeholder="Nhập mã PGN"></textarea>
+                <button id="load-pgn-btn">Tải PGN</button>
+                <button id="save-pgn-btn">Lưu PGN</button>
+                <button id="undo-btn">Lùi lại</button>
+                <button id="redo-btn">Tiến lên</button>
+                <button id="check-btn">Kiểm tra</button>
+                <button id="start-puzzle">Bắt đầu làm bài tập</button>
+              </div>
+              <div id="list-puzzle"></div>
+            </div>
+            <div id="information" class="center">
+              <h1 class="ranking-table">Bảng xếp hạng</h1>
+              <ul class="list-score">
+                <li>Username 1: <span>100</span></li>
+                <li>Username 2: <span>90</span></li>
+                <li>Username 3: <span>80</span></li>
+                <li id="my-score">Điểm của tôi: <span id="score">0</span></li>
+              </ul>
+            </div>
+          </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://unpkg.com/peerjs@1.4.7/dist/peerjs.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+
+    <script src="/js/chessboard.js"></script>
+    <script src="/js/chess13.4.js"></script>
+    <script defer src="/js/trochuyen.js"></script>
+    <script defer src="/js/app.js"></script>
+</body>
+
+</html>

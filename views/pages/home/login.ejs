@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/img/logo.png">
+    <title>Đăng nhập tài khoản</title>
+    <link rel="stylesheet" href="/css/base.client.css">
+    <link rel="stylesheet" href="/css/core.client.css">
+    <link rel="stylesheet" href="/css/login/login.client.css">
+</head>
+
+<body class=" dark-mode newicons no-nav dark-mode login-chessboard-background">
+    <div class="">
+        <div class="base-container">
+            <div id="scroll-top-anchor"></div>
+            <div id="language-banner"></div>
+            <main class="v5-section login-component login-component-v5">
+                <div class="login-form-wrapper login-form-wrapper-v5">
+                    <%if (!checkLogin) {%>
+                        <p class="authentication-login-error">This password is incorrect. <a href="#">Forgot / Reset password?</a></p>
+                        <%}%>
+                    <form novalidate="" method="post" action="/login"
+                        class="authentication-login-form login-form login-form-v5">
+                        <div class="ui_v5-input-group-component">
+                            <input type="email" id="username" name="_username" required="required" form-error-clear=""
+                                class="ui_v5-input-component ui_v5-input-group-space-left login-input"
+                                placeholder="Tên người dùng hoặc thư điện tử" 
+                                <%if (!username) {%>
+                                    autofocus=""
+                                <%}%>
+                                aria-label="Tên người dùng hoặc thư điện tử" autocomplete="email" value="<%if (username) {%>
+                                    <%=username%>
+                                <%}%>">
+                            <span class="icon-font-chess ui_v5-input-group-icon ui_v5-input-group-left user"></span>
+                        </div>
+                        <div class="ui_v5-input-group-component">
+                            <input type="password" id="password" name="_password" required="required"
+                                form-error-clear=""
+                                class="ui_v5-input-component ui_v5-input-group-space-left ui_v5-input-group-space-right login-input"
+                                placeholder="Mật khẩu" aria-label="Mật khẩu" autocomplete="current-password"
+                                <%if (username) {%>
+                                    autofocus=""
+                                <%}%>
+                                >
+                            <span class="icon-font-chess ui_v5-input-group-icon ui_v5-input-group-left lock"></span>
+                            <button type="button" id="toggle-password-visibility"
+                                class="ui_v5-input-group-button login-toggle-password-visibility">
+                                <span id="toggle-password-visibility-icon"
+                                    class="icon-font-chess ui_v5-input-group-icon eye" aria-hidden="true">
+                                </span>
+                            </button>
+                        </div>
+                        <div class="authentication-login-options">
+                            <div class="form-checkbox-component"><input type="checkbox" id="_remember_me"
+                                    name="_remember_me" class="form-checkbox-checkbox" container-class="form-checkbox"
+                                    data-tinymce="false" form-error-clear="" full_name="_remember_me" value="1"><label
+                                    class="form-checkbox-label" for="_remember_me">
+                                    Remember me
+                                </label></div>
+
+                            <a href="https://www.chess.com/vi/forgot"
+                                class="authentication-login-forgot authentication-login-forgot-v5"
+                                title="Quên mật khẩu?">
+                            </a>
+                        </div>
+
+                        <button type="submit" id="login" name="login" theme="primary" size="large"
+                            class="login-submit-v5 ui_v5-button-component ui_v5-button-primary ui_v5-button-large"
+                            data-no-controls="true">Đăng nhập</button>
+
+                        <input type="hidden" id="_target_path" name="_target_path" form-error-clear=""
+                            value="https://www.chess.com/vi"><input type="hidden" id="_token" name="_token"
+                            form-error-clear="" value="jVd3v5CvyDPfC_MpQfCsJk0zYI3Gek2jvH-mLMFHNzQ">
+                    </form>
+
+                    <div class="authentication-social-signin-v5-component">
+                        <div class="authentication-social-signin-v5-separator">
+                            <span></span>
+                            <span class="authentication-social-signin-v5-paragraph">HOẶC</span>
+                            <span></span>
+                        </div>
+
+                        <div class="authentication-social-signin-v5-options">
+                          
+
+                            <a href="/auth/google"
+                                class="authentication-social-signin-v5-social-button authentication-social-signin-v5-google"
+                                rel="nofollow">
+
+                                <span class="authentication-social-signin-v5-social-icon google"></span>
+
+                                <span>Đăng nhập bằng Google</span>
+                            </a>
+
+                            <a href="/auth/facebook"
+                                class="authentication-social-signin-v5-social-button authentication-social-signin-v5-facebook"
+                                rel="nofollow">
+                                <span class="authentication-social-signin-v5-social-icon facebook-button"></span>
+
+                                <span>Đăng nhập với Facebook</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <h4 class="login-signup">
+                    <a href="/register" class="login-link login-link-v5">
+                        <span class="login-text">Mới đến?</span>
+
+                        <span class="login-text-link">Đăng kí - và bắt đầu chơi cờ Vua!</span>
+                    </a>
+                </h4>
+            </main>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

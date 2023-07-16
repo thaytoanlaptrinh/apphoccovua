@@ -1,0 +1,39 @@
+[Event "Chess Puzzle"]
+[Site "Unknown"]
+[Date "2023.07.08"]
+[Round "1"]
+[White "Player1"]
+[Black "Player2"]
+[Result "*"]
+
+1. e4 e5
+2. Nf3 Nc6
+3. Bb5 a6
+4. Ba4 Nf6
+5. O-O Be7
+6. Re1 b5
+7. Bb3 d6
+8. c3 O-O
+9. h3 Nb8
+10. d4 Nbd7
+11. Nbd2 Bb7
+12. Bc2 Re8
+13. Nf1 Bf8
+14. Ng3 g6
+15. a4 c5
+16. d5 c4
+17. Bg5 h6
+18. Be3 Qc7
+19. Qd2 Kh7
+20. Nh2 Nc5
+21. axb5 axb5
+22. Rxa8 Rxa8
+23. f4 Nfd7
+24. Rf1 exf4
+25. Bxf4 Nb6
+26. Ng4 h5
+27. Nf6+ Kh8
+28. Bh6 Qe7
+29. Bxf8 Qxf8
+30. Ngxh5 gxh5
+31. Rf5 * {4}

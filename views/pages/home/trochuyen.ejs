@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/img/logo.png">
+    <title>Học Cờ Vua Cùng Thầy Toàn</title>
+</head>
+
+<body>
+    <div id="div-chat">
+        <p>Online user</p>
+        <ul id="ulUser">
+
+        </ul>
+        <h3 id="my-peer">Your id: </h3>
+        <video id="localStream" width="300" controls></video>
+        <br /><br />
+        <video id="remoteStream" width="300" controls></video>
+        <br /><br />
+        <input type="text" id="remoteId" placeholder="Remote ID">
+        <button id="btnCall">Call</button>
+    </div>
+
+    <div id="div-dangky">
+        <input type="text" id="txtUsername" placeholder="Enter your name">
+        <button id="btnSignup">Sign up</button>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://unpkg.com/peerjs@1.4.7/dist/peerjs.min.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/main.js"></script>
+
+</html>

@@ -1,0 +1,22 @@
+#app {
+  display: flex;
+}
+
+.center {
+  text-align: center;
+}
+
+#information {
+  flex: 1;
+}
+
+
+.list-score {
+  font-size: 25px;
+
+}
+
+.list-score li {
+  line-height: 2.2;
+}
+

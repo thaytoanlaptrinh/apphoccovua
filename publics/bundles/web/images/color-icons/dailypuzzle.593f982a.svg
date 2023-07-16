@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="90" height="90" viewBox="0 0 90 90">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #6c9d41;
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-3 {
+        fill: #bdbcb8;
+      }
+
+      .cls-4 {
+        fill: #95bb4a;
+      }
+
+      .cls-5 {
+        fill: #4e7838;
+      }
+
+      .cls-6 {
+        fill: #ededed;
+      }
+
+      .cls-7 {
+        fill: #fff;
+      }
+
+      .cls-8 {
+        fill: url(#linear-gradient-2);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="-550.36" y1="359.06" x2="-549.15" y2="358.31" gradientTransform="matrix(42.5, 0, 0, -23.75, 23409.75, 8582.25)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c2cece"/>
+      <stop offset="1" stop-color="#97aaaa"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="-543.17" y1="351.98" x2="-543.17" y2="355.6" gradientTransform="matrix(28.75, 0, 0, -12.5, 15662.25, 4464.66)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.26" stop-color="#eee"/>
+      <stop offset="1" stop-color="#a0a0a0"/>
+    </linearGradient>
+  </defs>
+  <g id="Layer_1" data-name="Layer 1">
+    <g id="fresh-start">
+      <g id="_13_puzzles" data-name="13_puzzles">
+        <g id="Group-3">
+          <g id="calendar">
+            <path id="Path" class="cls-1" d="M79,5.58H11a3.47,3.47,0,0,0-3.45,3.5V81.31A3.47,3.47,0,0,0,11,84.81H79a3.47,3.47,0,0,0,3.45-3.5V9.08A3.47,3.47,0,0,0,79,5.58Z"/>
+            <path id="Path-2" data-name="Path" class="cls-2" d="M79,84.81H11a3.49,3.49,0,0,1-3.45-3.54V43H82.41V81.27A3.49,3.49,0,0,1,79,84.81Z"/>
+            <path id="Path-3" data-name="Path" class="cls-3" d="M79,84.81H11a3.5,3.5,0,0,1-3.45-3.55V73.8H82.41v7.46A3.5,3.5,0,0,1,79,84.81Z"/>
+            <path id="Path-4" data-name="Path" class="cls-4" d="M85.56,76H4.44a3.48,3.48,0,0,1-3.37-4.26L7.59,43H82.41l6.52,28.75A3.48,3.48,0,0,1,85.56,76Z"/>
+            <path id="Path-5" data-name="Path" class="cls-5" d="M27.42,5.58v6.09a3.44,3.44,0,0,0,3.3,3.56h0A3.44,3.44,0,0,0,34,11.67V5.58Z"/>
+            <path id="Path-6" data-name="Path" class="cls-5" d="M58.23,5.58v6.09a3.44,3.44,0,0,0,3.3,3.56h0a3.44,3.44,0,0,0,3.3-3.56V5.58Z"/>
+            <path id="Path-7" data-name="Path" class="cls-6" d="M28.49,14.38h0a3.44,3.44,0,0,1-3.3-3.56V4.73a3.44,3.44,0,0,1,3.3-3.56h0a3.44,3.44,0,0,1,3.3,3.56v6.09A3.43,3.43,0,0,1,28.49,14.38Z"/>
+            <path id="Path-8" data-name="Path" class="cls-6" d="M59.31,14.38h0A3.44,3.44,0,0,1,56,10.82V4.73a3.44,3.44,0,0,1,3.31-3.56h0a3.44,3.44,0,0,1,3.3,3.56v6.09A3.44,3.44,0,0,1,59.31,14.38Z"/>
+            <g id="piece">
+              <g id="Path-9" data-name="Path">
+                <path id="path-10" class="cls-7" d="M71.41,44a6.44,6.44,0,0,0-6.49-6.38,6.52,6.52,0,0,0-3.35.92,1.22,1.22,0,0,1-1.21,0,1.17,1.17,0,0,1-.6-1v-7.6a2.16,2.16,0,0,0-2.19-2.11H48.09a1.18,1.18,0,0,1-1-.58,1.15,1.15,0,0,1,0-1.16A6.25,6.25,0,0,0,47.86,23a6.49,6.49,0,0,0-13,0,6.22,6.22,0,0,0,.81,3.09,1.18,1.18,0,0,1-1,1.74H25.17A2.15,2.15,0,0,0,23,29.91v7.42a1.16,1.16,0,0,0,.58,1,1.21,1.21,0,0,0,1.18,0,6.59,6.59,0,0,1,3.08-.76A6.44,6.44,0,0,1,34.32,44"/>
+                <path id="path-13" class="cls-8" d="M71.28,43a7.12,7.12,0,0,1,.13,1.39,6.76,6.76,0,0,1-6.49,7,6.06,6.06,0,0,1-3.35-1,1.11,1.11,0,0,0-1.2,0,1.3,1.3,0,0,0-.61,1.12h0L62,62.68A2.27,2.27,0,0,1,59.77,65H23a2.26,2.26,0,0,1-2.18-2.32h0l2.2-11a1.3,1.3,0,0,1,.58-1.1,1.12,1.12,0,0,1,1.18,0,6.09,6.09,0,0,0,3.08.83,6.76,6.76,0,0,0,6.49-7A7.12,7.12,0,0,0,34.19,43Z"/>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,122 @@
+@font-face {
+    font-family: "thaytoancovuafont";
+    src: url("/fonts/montserrat.woff2"),
+        url("/fonts/chessglyph.woff2"),
+        url("/fonts/montserrat2.woff2");
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background-color: #312e2b;
+    color: #312e2b;
+    font-family: thaytoancovuafont, -apple-system, BlinkMacSystemFont, Segoe UI, system-ui, Helvetica, Arial, sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.43;
+    margin: 0;
+    padding: 0;
+}
+
+.base-layout {
+    padding-left: 14.5rem;
+}
+
+.base-sidebar {
+    display: block;
+    background-color: #272522;
+    left: 0;
+    position: fixed;
+    width: 14.5rem;
+    color: #fff;
+    z-index: 9000;
+    height: 100vh;
+}
+
+.base-sidebar li {
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    padding: 8px 0 8px 10px;
+}
+
+.nav-top {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.nav-bottom li {
+    display: flex;
+    justify-content: center;
+    background-color: hsla(0, 0%, 100%, .08);
+    margin-bottom: 10px;
+    margin-left: 8px;
+    margin-right: 8px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.nav-bottom li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    /* color: hsla(0,0%,100%,.65); */
+}
+
+.nav-bottom li:first-child:hover {
+    background-color: #312e2b;
+}
+
+.nav-bottom li:first-child a {
+    color: hsla(0, 0%, 100%, .65);
+}
+
+.nav-bottom li:first-child:hover a {
+    color: #fff;
+}
+
+.nav-bottom li:nth-child(2) {
+    background-color: #7fa650;
+}
+
+.nav-bottom li:nth-child(2):hover {
+    background-color: #537133;
+}
+
+.nav-bottom li:nth-child(2) a {
+    color: #fff;
+}
+
+.base-container {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    max-height: 100vh;
+    max-width: 100vw;
+}
+
+.layout-component {
+    margin-left: 14.5rem;
+    margin-right: 14.5rem;
+}
+
+.index-guest-block {
+    display: flex;
+}
+
+.index-board {
+    padding-right: 20px;
+    flex: 1;
+}
+
+.index-intro {
+    padding-left: 20px;
+    flex: 1;
+}
+
+.index-intro h1 {
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+}

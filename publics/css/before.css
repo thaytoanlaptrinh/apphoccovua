@@ -1,0 +1,22 @@
+.sprite.play-top:before {
+    background-position: -2.1rem -7.8rem;
+}
+
+.sprite.learn-top:before {
+    background-position: -2.3rem -15.15rem;
+}
+
+.sprite.puzzles-top:before {
+    background-position: -2.3rem -11.4rem;
+}
+
+.sprite:before {
+    background: url(/img/nav/nav.png);
+    background-size: 15.4rem auto;
+    content: "";
+    display: block;
+    flex-shrink: 0;
+    margin-right: 1.2rem;
+    height: 3rem;
+    width: 3rem;
+}
